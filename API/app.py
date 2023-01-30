@@ -7,12 +7,13 @@ CORS(app)
 
 def get_data():
     api = requests.get('https://api.kanye.rest')
-    api = api.json()
-    return api['quote']
-    
+    return api.json()
+
+
 @app.route('/kanye')
 def kanye():
     quote = get_data()
     return 
 
 app.run()
+    return quote
