@@ -1,15 +1,16 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
+import { Wrapper } from './App.styles';
 
-function App() {
+const App = () => {
   const [quote, setQuote] = useState();
 
-  useEffect(() => {
-    fetch("/kanye")
-      .then((res) => res.json())
-      .then((data) => setQuote(quote));
-  }, [quote]);
+  // useEffect(() => {
+  //   fetch('/kanye')
+  //     .then((res) => console.log(res))
+  //     .then((data) => setQuote(data));
+  // }, [quote]);
 
-  return <h1>{quote}</h1>;
-}
+  return <Wrapper>hi</Wrapper>;
+};
 
 export default App;
