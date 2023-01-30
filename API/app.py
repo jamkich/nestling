@@ -13,6 +13,6 @@ def get_data():
 @app.route('/kanye')
 def kanye():
     quote = get_data()
-    return
+    return 
 
 app.run()
