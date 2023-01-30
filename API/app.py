@@ -5,9 +5,15 @@ import requests
 app = Flask(__name__)
 CORS(app)
 
-api = requests.get('https://api.kanye.rest')
+
+def get_data():
+    api = requests.get('https://api.kanye.rest')
+    api = api.json()
+    return api['quote']
+
+
 @app.route('/')
-def hello():
-    return "Hello WORLD!"
+def quote():
+    return get_data()
 
-
+app.run()
