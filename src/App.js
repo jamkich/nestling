@@ -6,7 +6,7 @@ function App() {
   useEffect(() => {
     fetch("/kanye")
       .then((res) => res.json())
-      .then((data) => setQuote(quote));
+      .then((data) => setQuote(data));
   }, [quote]);
 
   return <h1>{quote}</h1>;
