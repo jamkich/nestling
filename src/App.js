@@ -1,16 +1,11 @@
-import { useEffect, useState } from 'react';
 import { Wrapper } from './App.styles';
-
+import Card from './components/Card/Card';
 const App = () => {
-  const [quote, setQuote] = useState();
-
-  // useEffect(() => {
-  //   fetch('/kanye')
-  //     .then((res) => console.log(res))
-  //     .then((data) => setQuote(data));
-  // }, [quote]);
-
-  return <Wrapper>hi</Wrapper>;
+  return (
+    <Wrapper>
+      <Card />
+    </Wrapper>
+  );
 };
 
 export default App;
