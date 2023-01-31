@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /API/venv
+/API/__pycache__/app.cpython-310.pyc
 
 # testing
 /coverage
@@ -22,3 +23,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
