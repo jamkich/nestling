@@ -1,16 +1,16 @@
 from flask import Flask
 from flask_cors import CORS
 import requests
-import time
 import json
 import random
+import schedule
 from os.path import exists
 import collections
+from multiprocessing import Process
+
 
 app = Flask(__name__)
 CORS(app)
-
-global json_package
 
 
 def choose_color():
@@ -57,12 +57,14 @@ def make_json():
                     data_json['kanye_quotelist'] = x
                     json.dump(data_json, json_file, indent=2)
                     json_file.close()
+                    return None
             else:
                 with open('quotes.json', 'w') as json_file:
                     quotes.append(change_json())
                     data_json['kanye_quotelist'] = quotes
                     json.dump(data_json, json_file, indent=2)
                     file.close()
+                    return None
     else:
         with open('quotes.json', 'w') as file:
             data_json = {
@@ -77,14 +79,24 @@ def make_json():
             data = json.dumps(data_json, indent=2)
             file.write(data)
             file.close()
-    return None
+            return None
 
 
-
+def repeat():
+    schedule.every().minute.do(make_json)
+    while True:
+        schedule.run_pending()
 
 
 @app.route('/kanye')
 def kanye():
-    while True:
-        make_json()
-        time.sleep(86400)
+    with open('quotes.json', 'r') as file:
+        return json.load(file)
+
+
+if __name__ == "__main__":
+    make_json()
+    p1 = Process(target=repeat, args=())
+    p1.daemon = True
+    p1.start()
+    app.run()
