@@ -88,4 +88,3 @@ def kanye():
     while True:
         make_json()
         time.sleep(86400)
-    return
