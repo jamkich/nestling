@@ -83,7 +83,7 @@ def make_json():
 
 
 def repeat():
-    schedule.every().minute.do(make_json)
+    schedule.every().day.at('00:00').do(make_json)
     while True:
         schedule.run_pending()
 
