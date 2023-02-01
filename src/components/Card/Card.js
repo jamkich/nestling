@@ -3,14 +3,14 @@ import { CardWrapper, Quote } from './Card.styles';
 import kanye from '../../assets/images/ye.jpeg';
 
 const Card = () => {
-  const [quote, setQuote] = useState();
+  const [quote, setQuote] = useState([]);
 
-  // useEffect(() => {
-  //   fetch('/kanye')
-  //     .then((res) => console.log(res))
-  //     .then((data) => setQuote(data));
-  // }, [quote]);
-
+  useEffect(() => {
+    fetch('/kanye')
+      .then((res) => res.json())
+      .then((data) => setQuote(data));
+  }, []);
+  console.log(quote);
   return (
     <CardWrapper>
       <img src={kanye} alt="Kanye West" />
