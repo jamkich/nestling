@@ -1,22 +1,10 @@
-import { useEffect, useState } from 'react';
 import { CardWrapper, Quote } from './Card.styles';
-import kanye from '../../assets/images/ye.jpeg';
 
-const Card = () => {
-  const [quote, setQuote] = useState([]);
-
-  useEffect(() => {
-    fetch('/kanye')
-      .then((res) => res.json())
-      .then((data) => setQuote(data));
-  }, []);
-  console.log(quote);
-  return (
-    <CardWrapper>
-      <img src={kanye} alt="Kanye West" />
-      <Quote>"We're going to move the entire music industry into the 21st Century"</Quote>
-    </CardWrapper>
-  );
-};
+const Card = ({ color, image, quote, idx }) => (
+  <CardWrapper color={color} key={idx}>
+    <img src={image} alt="Kanye West" />
+    <Quote>{quote}</Quote>
+  </CardWrapper>
+);
 
 export default Card;
