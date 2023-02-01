@@ -8,9 +8,10 @@ const Card = () => {
   useEffect(() => {
     fetch('/kanye')
       .then((res) => res.json())
-      .then((data) => setQuote(data));
+      .then(({ data }) => setQuote(data));
   }, []);
   console.log(quote);
+
   return (
     <CardWrapper>
       <img src={kanye} alt="Kanye West" />
