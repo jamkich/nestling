@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 /API/venv
-/API/__pycache__/app.cpython-310.pyc
+/API/__pycache__/
 
 # testing
 /coverage
