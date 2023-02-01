@@ -1,9 +1,9 @@
 import { Wrapper } from './App.styles';
-import Card from './components/Card/Card';
+import CardCarousel from './components/CardCarousel/CardCarousel';
 const App = () => {
   return (
     <Wrapper>
-      <Card />
+      <CardCarousel />
     </Wrapper>
   );
 };
