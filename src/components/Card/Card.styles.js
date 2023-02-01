@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CardWrapper = styled.div`
-  background-color: #d9cae0;
+  background-color: ${(props) => props.color};
   display: flex;
   justify-content: center;
   align-items: center;
