@@ -1,9 +1,8 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-
 import { useState, useEffect } from 'react';
-import Card from '../Card/Card';
+import Card from '../../molecules/Card/Card';
 
 const CardCarousel = () => {
   const [quote, setQuote] = useState([]);
@@ -21,7 +20,7 @@ const CardCarousel = () => {
     </Carousel>
   );
 
-  // TODO map card in carousel, detect why map is not working actually
+  // DONE  map card in carousel, detect why map is not working actually
 };
 
 export default CardCarousel;
