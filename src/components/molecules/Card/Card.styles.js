@@ -17,11 +17,6 @@ export const CardWrapper = styled.div`
     width: 50%;
     height: 90%;
     padding-right: 30px;
+    border-radius: 5px;
   }
-`;
-
-export const Quote = styled.p`
-  font-size: 1.5em;
-  font-family: 'Kalam', cursive;
-  text-align: justify;
 `;

@@ -1,4 +1,5 @@
-import { CardWrapper, Quote } from './Card.styles';
+import { CardWrapper } from './Card.styles';
+import { Quote } from '../../atoms/Quote/Quote.styles';
 
 const Card = ({ color, image, quote, idx }) => (
   <CardWrapper color={color} key={idx}>
