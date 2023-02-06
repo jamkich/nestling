@@ -2,7 +2,7 @@
 
 ## How to setup
 
-### run:
+### Download repository:
 
 `git clone https://github.com/jamkich/nestling.git`
 
