@@ -9,8 +9,8 @@
 ### Next, move to directory and run:
 
 `npm install`
-
 `source API/venv/bin/activate`
+`pip install --target APi/venv/lib/python3.10/site-packages/ -r requirements.txt`
 
 ### Set environment variable:
 
