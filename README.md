@@ -8,6 +8,8 @@
 
 ### Next, move to directory and run:
 
+`npm install`
+
 `source API/venv/bin/activate`
 
 ### Set environment variable:
