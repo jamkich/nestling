@@ -14,10 +14,10 @@
 
 `export FLASK_APP=main.py`
 
-### run:
+### Run:
 
 `npm run start-api`
 
-### open new terminal and run:
+### Open new terminal and run:
 
 `npm start`
