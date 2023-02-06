@@ -12,7 +12,6 @@ from multiprocessing import Process
 app = Flask(__name__)
 CORS(app)
 
-
 def choose_color():
     colors = ['#d9cae0', '#D02841', '#F58B57', '#C1CA23', '#CBDFDF', '#F1D7B6', '#652293']
     return random.choice(colors)

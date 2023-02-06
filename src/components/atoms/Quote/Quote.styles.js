@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 
-export const Quote = styled.p`
-  font-size: 1.5em;
+const Quote = styled.p`
+  font-smooth: always;
+  font-size: 2.5vw;
   font-family: 'Kalam', cursive;
-  text-align: justify;
   font-weight: 700;
+  overflow-wrap: break-word;
 `;
+
+export default Quote;
