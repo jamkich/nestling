@@ -1,6 +1,11 @@
 {
   "kanye_quotelist": [
     {
+      "quote": "We will be recognized",
+      "image": "https://www.billboard.com/wp-content/uploads/2022/10/kanye-west-tidal-15-2022-billboard-1548.jpg",
+      "color": "#C1CA23"
+    },
+    {
       "quote": "The world needs more Joy... this idea is super fresh",
       "image": "https://www.billboard.com/wp-content/uploads/2022/10/kanye-west-tidal-15-2022-billboard-1548.jpg",
       "color": "#F58B57"
@@ -28,11 +33,6 @@
     {
       "quote": "I've known my mom since I was zero years old. She is quite dope.",
       "image": "https://nypost.com/wp-content/uploads/sites/2/2020/07/kanye-west-2-copy.jpg?quality=75&strip=all",
-      "color": "#d9cae0"
-    },
-    {
-      "quote": "We're going to move the entire music industry into the 21st Century",
-      "image": "https://bi.im-g.pl/im/25/db/1b/z29212197Q,Kanye-West.jpg ",
       "color": "#d9cae0"
     }
   ]
